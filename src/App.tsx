@@ -13,7 +13,7 @@ function App() {
 						<Fragment>
 							<h1 style={{ textAlign: 'center' }}>404 ничего не найдено</h1>
 							<br></br>
-							<Link to="/">вернуться на главную</Link>
+							<Link to="/webdotg_2/">вернуться на главную</Link>
 						</Fragment>
 					} /> 
     </Routes>
