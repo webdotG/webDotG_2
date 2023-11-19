@@ -8,7 +8,7 @@ function App() {
 
   return (
     <Routes>
-      <Route index path="/" element={<MainPage />} />
+      <Route index path="/webdotg_2/" element={<MainPage />} />
       <Route path="*" element={
 						<Fragment>
 							<h1 style={{ textAlign: 'center' }}>404 ничего не найдено</h1>
