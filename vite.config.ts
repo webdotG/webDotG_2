@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [
     react()
   ],
-  base: '/webDotG',
+  base: '/webDotG_2',
 })
