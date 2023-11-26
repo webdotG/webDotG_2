@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Routes, Route, Link, } from "react-router-dom";
 import MainPage from "./pages/main_page";
-import './App.css'
+import './App.scss'
 
 
 function App() {
