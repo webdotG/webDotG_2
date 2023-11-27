@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import HeaderLogo from '../icons/header__logo';
 import style from './header.module.scss'
 
 
@@ -22,8 +21,6 @@ function Header() {
           className={style.burger_btn}
           >
             <span>btn</span>
-            <span></span>
-            <span></span>
       </button>
       </section>
       <div className={onClickBtn ? style.nav__wrapper: style.display_none }>
@@ -47,6 +44,7 @@ function Header() {
                 portfolio
               </Link>
             </li>
+
 
           </ul>
         </nav>
