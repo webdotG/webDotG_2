@@ -1,11 +1,12 @@
 // import style from './mainPortfolio.module.scss'
 import { useState, useMemo } from 'react' 
 
+
 function MainPortfolio() {
   const useHover = () => {
-    const [hovered, setHovered] = useState();
-    
-    const eventHandlers = useMemo(() => ({
+    const [hovered, setHovered] = useState(false);
+
+    const eventHandlers= useMemo(() => ({
       onMouseOver() { setHovered(true); },
       onMouseOut() { setHovered(false); }
     }), []);
@@ -13,7 +14,7 @@ function MainPortfolio() {
     return [hovered, eventHandlers];
   }
   
-  const Item = ({ children }) => {
+  const Item = ({ children } ) => {
     const [hovered, eventHandlers] = useHover();
   
     return (
@@ -39,19 +40,6 @@ function MainPortfolio() {
     </div>
   );
 
-
-  // return (
-  //   <div className={style.main}>
-  //     <h2 className={style.main}>портфолио</h2>
-  //     <div className={style.main}>
-  //       <div className={style.container}>
-  //       <div className={style.middle}>
-  //         <a href='#' className={style.text}>интернет магазин</a>
-  //       </div>
-  //     </div>
-  //   </div>
-  //   </div>
-  // )
 }
 
 export default MainPortfolio
