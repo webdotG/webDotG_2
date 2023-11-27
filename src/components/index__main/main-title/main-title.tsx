@@ -1,23 +1,23 @@
 import G from './G';
-import './main-title.css'
+import style from './mainTitle.module.scss'
 
 function MainTitle() {
 
   return (
-    <section className='main-title__wrapper'>
-      <div className='letter-g__wrapper' >
-      <h1 className='main-title Roboto-Regular'>webDot</h1>
-      <G/>
+    <>
+      <div className={style.main_title__wrapp}>
+        <h1 className={style.main_title}>webDot<G /></h1>
       </div>
-      <h6 className='main-title__title Roboto-Regular'>создаю и улучшаю :</h6>
-      <div className='main-title__text-wrapper'>
-        <p className='main-title__text Roboto-Regular'>сайты</p>
-        <p className='main-title__text Roboto-Regular'>приложения</p>
-        <p className='main-title__text Roboto-Regular'>чат боты</p>
-        <p className='main-title__text Roboto-Regular'>email письма</p>
-      </div>
-    </section>
-  )
+      <h6 className={style.main_title__title}>создаю и улучшаю :</h6>
+      <div className={style.main_title__text}>
+        <p className={style.main_title__text }>сайты</p>
+        <p className={style.main_title__text }>приложения</p>
+        <p className={style.main_title__text }>чат боты</p>
+        <p className={style.main_title__text }>email письма</p>
+      </div >
+    </>
+    )
+
 }
 
 export default MainTitle;
