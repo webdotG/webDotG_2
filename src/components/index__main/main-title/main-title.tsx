@@ -8,13 +8,11 @@ function MainTitle() {
       <div className={style.main_title__wrapp}>
         <h1 className={style.main_title}>webDot<G /></h1>
       </div>
-      <h6 className={style.main_title__title}>создаю и улучшаю :</h6>
-      <div className={style.main_title__text}>
-        <p className={style.main_title__text }>сайты</p>
-        <p className={style.main_title__text }>приложения</p>
-        <p className={style.main_title__text }>чат боты</p>
-        <p className={style.main_title__text }>email письма</p>
-      </div >
+      <ul className={style.main_title_list}>
+        <li className={style.main_title__text }>сайты</li>
+        <li className={style.main_title__text }>приложения</li>
+        <li className={style.main_title__text }>чат боты</li>
+      </ul>
     </>
     )
 
