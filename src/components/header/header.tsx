@@ -14,16 +14,20 @@ function Header() {
 
       <section className={style.header_logo__wrapper}>
         <Link className={style.header_logo} to="/webDotG_2/">
-          menu
+          Kirill Grant
         </Link>
         <button
           onClick={() => setOnCliclBtn(!onClickBtn)}
           className={style.burger_btn}
-          >
-            <span>btn</span>
-      </button>
+        >
+          {onClickBtn
+            ? (<span>close menu</span>)
+            : (<span>open menu</span>)
+          }
+
+        </button>
       </section>
-      <div className={onClickBtn ? style.nav__wrapper: style.display_none }>
+      <div className={onClickBtn ? style.nav__wrapper : style.display_none}>
         <nav className={style.header_navigation}>
           <ul className={style.header_nav_list}>
 
