@@ -1,56 +1,57 @@
-import HeaderIconTelegram from '../icons/header__icon-telegram';
-import HeaderIconLogin from '../icons/header__icon--login';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import HeaderLogo from '../icons/header__logo';
-import './header.scss'
+import style from './header.module.scss'
 
 
 function Header() {
 
+  const [onClickBtn, setOnCliclBtn] = useState(false)
+
+  console.log(onClickBtn)
+
   return (
-    <header className='header'>
-      <nav className='header-navigation'>
-        <section className='header-logo__wrapper'>
-          <a className='header-logo' href="">
-            <HeaderLogo />
-          </a>
-        </section>
-        <ul className='header_nav list'>
-          <li className='header_nav__item'>
-            <a className='header_nav__link' href="">
-              написать
-            </a>
-          </li>
-          <li className='header_nav__item'>
-            <a className='header_nav__link' href="">
-              заказать
-            </a>
-          </li>
-        </ul>
-        <ul className='header-about list'>
-          <li className='header_nav__item'>
-            <a className='header_nav__link' href="">
-              услуги
-            </a>
-          </li>
-          <li className='header_nav__item'>
-            <a className='header_nav__link' href="">
-              портфолио
-            </a>
-          </li>
-        </ul>
-        <ul className='header-login__wrapper list'>
-          <li className='header_nav__item'>
-            <a className='header_nav__link Roboto-Regular' href="">
-              войти
-            </a>
-          </li>
-          <li className='header_nav__item'>
-            <a className='header_nav__link Roboto-Regular' href="">
-              зарегистрироваться
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <header className={style.header}>
+
+      <section className={style.header_logo__wrapper}>
+        <Link className={style.header_logo} to="/webDotG_2/">
+          menu
+        </Link>
+        <button
+          onClick={() => setOnCliclBtn(!onClickBtn)}
+          className={style.burger_btn}
+          >
+            <span>btn</span>
+            <span></span>
+            <span></span>
+      </button>
+      </section>
+      <div className={onClickBtn ? style.nav__wrapper: style.display_none }>
+        <nav className={style.header_navigation}>
+          <ul className={style.header_nav_list}>
+
+            <li className={style.header_nav__item}>
+              <Link className={style.header_nav__link} to="/webDotG_2/login">
+                log in
+              </Link>
+            </li>
+
+            <li className={style.header_nav__item}>
+              <Link className={style.header_nav__link} to="/webDotG_2/register">
+                register
+              </Link>
+            </li>
+
+            <li className={style.header_nav__item}>
+              <Link className={style.header_nav__link} to="/webDotG_2/portfolio">
+                portfolio
+              </Link>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+
     </header>
   )
 }
