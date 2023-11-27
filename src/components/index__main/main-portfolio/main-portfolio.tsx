@@ -1,39 +1,57 @@
-
-import './main-portfolio.css'
+// import style from './mainPortfolio.module.scss'
+import { useState, useMemo } from 'react' 
 
 function MainPortfolio() {
+  const useHover = () => {
+    const [hovered, setHovered] = useState();
+    
+    const eventHandlers = useMemo(() => ({
+      onMouseOver() { setHovered(true); },
+      onMouseOut() { setHovered(false); }
+    }), []);
+    
+    return [hovered, eventHandlers];
+  }
+  
+  const Item = ({ children }) => {
+    const [hovered, eventHandlers] = useHover();
+  
+    return (
+      <li {...eventHandlers}>Item: {hovered && children}</li>
+    );
+  };
+  
+  const myObject = {
+    a: 'A1',
+    b: 'B2',
+    c: 'C3',
+  }
+
+  const reactionItems = Object.entries(myObject)
+    .map(([key, value]) => (
+      <Item key={key}>{value}</Item>
+    ));
 
   return (
-    <div className="main-portfolio__wrapper ">
-      <h2 className='main-portfolio__title'>портфолио</h2>
-      <div className='main-portfolio'>
-        <div className='container gallery__item gallery__item--1'>
-          <div className="middle">
-            <a href='#' className="text">интернет магазин</a>
-          </div>
-          di</div>
-        <div className='container gallery__item gallery__item--2'>
-          <div className="middle">
-            <a href='#' className="text">Программа для изучения английского</a>
-          </div>
-        </div><div className='container gallery__item gallery__item--3'>
-          <div className="middle">
-            <a href='#' className="text">сайт бронирования жилья</a>
-          </div>
-        </div>
-        <div className='container gallery__item gallery__item--4'>
-          <div className="middle">
-            <a href='#' className="text">чат бот</a>
-          </div>
-        </div>
-        <div className='container gallery__item gallery__item--5'>
-          <div className="middle">
-            <a href='#' className="text">Лендинг</a>
-          </div>
-        </div>
-      </div>
+    <div className="App">
+      <h2>Reactions</h2>
+      <ul>{reactionItems}</ul>
     </div>
-  )
+  );
+
+
+  // return (
+  //   <div className={style.main}>
+  //     <h2 className={style.main}>портфолио</h2>
+  //     <div className={style.main}>
+  //       <div className={style.container}>
+  //       <div className={style.middle}>
+  //         <a href='#' className={style.text}>интернет магазин</a>
+  //       </div>
+  //     </div>
+  //   </div>
+  //   </div>
+  // )
 }
 
 export default MainPortfolio
