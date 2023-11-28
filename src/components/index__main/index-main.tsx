@@ -10,8 +10,8 @@ function IndexMain() {
   return (
     <main>
       <MainTitle />
-      <MainPrice />
       <MainPortfolio />
+      <MainPrice />
       <MainAbout />
       <MainFeedback />
       <MainOrder />
