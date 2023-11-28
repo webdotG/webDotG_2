@@ -10,8 +10,8 @@ function MainTitle() {
       </div>
       <ul className={style.main_title_list}>
         <li className={style.main_title__text }>сайты</li>
-        <li className={style.main_title__text }>приложения</li>
         <li className={style.main_title__text }>чат боты</li>
+        <li className={style.main_title__text }>приложения</li>
       </ul>
     </>
     )
