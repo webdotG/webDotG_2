@@ -1,4 +1,4 @@
-import './main-about.css'
+import './main_about.scss'
 
 function MainAbout() {
 
