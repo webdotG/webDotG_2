@@ -16,13 +16,13 @@ function MainPortfolio() {
       <ul className="bloc_tabs">
         <li className={toggleState ===1 ? "tab active_tab" : 'tab'}
         onClick={() => toggleTab(1)}
-        >tab 1</li>
+        >сайты</li>
         <li className={toggleState === 2 ? "tab active_tab" : 'tab'}
         onClick={() => toggleTab(2)}
-        >tab 2</li>
+        >чат боты</li>
         <li className={toggleState === 3 ? "tab active_tab" : 'tab'}
         onClick={() => toggleTab(3)}
-        >tab 3</li>
+        >приложения</li>
       </ul>
       <ul className='content_tabs'>
         <li className={toggleState === 1 ? 'content active_content' : 'content'}>
