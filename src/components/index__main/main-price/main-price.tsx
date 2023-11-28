@@ -13,11 +13,6 @@ function MainPrice() {
             <h4 className={style.panel_title}>сайты</h4>
             <p>инди</p>
           </div>
-          <div className={style.wrapper}>
-            <img className={style.panel_img}></img>
-            <h4 className={style.panel_title}>сайты</h4>
-            <p>шаблон</p>
-          </div>
         </Link>
         <Link to='/' className={style.panel}>
           <div className={style.wrapper}>

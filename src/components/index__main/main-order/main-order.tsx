@@ -1,4 +1,4 @@
-import './main-order.css'
+import './main-order.scss'
 
 function MainOrder() {
 
