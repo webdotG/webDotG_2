@@ -1,5 +1,5 @@
 
-import './main-feedback.css'
+import './main_feedback.scss'
 
 function MainFeedback() {
 
