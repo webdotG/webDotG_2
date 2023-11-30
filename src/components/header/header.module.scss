@@ -1,5 +1,9 @@
 @media (min-width: 340px) {
 
+	.display_none{
+		display: none;
+	}
+
 	.header {
 		width: 100%;
 		padding-top: 25px;
@@ -38,9 +42,7 @@
 		font-size: 21px;
 		font-weight: 200;
 	}
-	.display_none{
-		display: none;
-	}
+	
 
 	.header_navigation {
 		padding-right: 40px;
@@ -95,41 +97,35 @@
 		border-radius: 8px;
 		color: #eeeeee;
 		font-size: 16px;
-
-		// span{
-		// 	height: 25px;
-		// 	width: 100%;
-		// 	background-color:#eeeeee;
-		// }
 	}
 
-	// .burger_btn::before,
-	// .burger_btn::after{
-	// 	content: '';
-	// 	height: 2px;
-	// 	width: 100%;
-	// 	background-color:#eeeeee;
-	// 	position: absolute;
-	// 	transition: all 0.3s ease 0s;
-	// }
-	// .burger_btn::before{
-	// 	top: 0;
-	// }
-	// .burger_btn::after{
-	// 	bottom: 0;
-	// }
+	.auth_wrapper{
+		width: 280px;
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+		display: flex;
+		justify-content: space-evenly;
+	}
 
-	// .burger_btn.active span {
-	// 	transform: scale(0);
-	// }
-	// .burger_btn.active::before{
-	// 	top: 50%;
-	// 	transform: rotate(-45deg) translate(0, -50%);
-	// }
-	// .burger_btn.active::after{
-	// 	bottom: 50%;
-	// 	transform: rotate(45deg) translate(0, 50%);
-	// }
+	.check_auth_link{
+		padding: 2px;
+		color: #eeeeee;
+		font-size: 18px;
+		text-decoration: underline;
+	}
+
+	.check_auth_btn{
+		margin-left: auto;
+		margin-bottom: 10px;
+		padding: 10px;
+		border: #00ADB5 1px solid;
+		border-radius: 5px;
+		outline: none;
+		background-color: transparent;
+		font-size: 16px;
+		color: #eeeeee;
+	}
 	
 }
 
@@ -141,8 +137,6 @@
 		justify-content: space-between;
 		align-items: baseline;
 	}
-	
-	
+		
 
 }
-
