@@ -1,11 +1,16 @@
+
 import style from './mainPrice.module.scss'
 import Carousel from "nuka-carousel"
 import { Link } from 'react-router-dom';
 
-function MainPrice() {
+
+function MainPortfolio() {
+
+  
   return (
-    <div className={style.main_price__wrapper}>
-      <h2 className={style.main_price__title}>цены</h2>
+
+<div className={`PORTFOLIO ${style.main_price__wrapper}`}>
+      <h2 className={style.main_price__title}>портфолио</h2>
       <Carousel>
         <Link to='/' className={style.panel}>
           <div className={style.wrapper}>
@@ -31,10 +36,8 @@ function MainPrice() {
           
         </Link>
       </Carousel>
-    </div>
-  )
+    </div>   
+  );
 }
 
-export default MainPrice;
-
-
+export default MainPortfolio
