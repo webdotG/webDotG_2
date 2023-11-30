@@ -5,7 +5,7 @@ function MainFeedback() {
 
   return (
     <div className='feedback'>
-       <h2 className='main-about__title'>отзывы </h2>
+       <h2 className='main_about__title'>отзывы </h2>
       <ul className='feedback__list'>
         <li className='feedback__item'>
           <div className='feedback__text-wrapper'>
