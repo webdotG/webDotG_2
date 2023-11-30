@@ -21,7 +21,7 @@ function MainTitle() {
       <motion.div
         initial='hidden'
         whileInView='visible'
-        // viewport={{ amount: 0.3 }}
+        viewport={{ amount: 0.2 }}
         className={style.main_title__wrapp}>
         <motion.h1 variants={textAnimation} className={style.main_title}>webDot<G /></motion.h1>
         <motion.p custom={2} variants={textAnimation} className={style.main_title_p}>разрабатываю и улучшаю</motion.p>

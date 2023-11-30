@@ -21,7 +21,7 @@ function MainAbout () {
       <motion.ul
         initial='hidden'
         whileInView='visible'
-        viewport={{ amount: 0.2, once: true }}
+        viewport={{ amount: 0.1, once: true }}
         className='main-about__list'>
         <motion.li
           custom={1}
