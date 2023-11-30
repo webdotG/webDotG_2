@@ -1,11 +1,10 @@
-
 @media (min-width:340px) {
-	
-	.feedback{
-	background-color: #222831;;
+
+	.feedback {
+		background-color: #222831;
 	}
 
-	.main_about__title{
+	.main_about__title {
 		margin: 0;
 		padding-top: 15px;
 		padding-bottom: 20px;
@@ -15,65 +14,97 @@
 		letter-spacing: 1px;
 		font-weight: 300;
 		position: relative;
-		background-color:#393e46;
+		background-color: #393e46;
 
 		&::after {
-      content: '';
-      width: 100%;
-      height: 3px;
-      border-radius: 5px;
-      background-color: #00ADB5;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
+			content: '';
+			width: 100%;
+			height: 3px;
+			border-radius: 5px;
+			background-color: #00ADB5;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
 	}
-	
+
 	.feedback__list {
-		max-width:1200px;
+		width: 300px;
 		margin: 0 auto;
-		padding-top: 30px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
+		flex-direction: column;
+		align-items: center;
 	}
-	
+
 	.feedback__item {
 		padding: 12px;
-		margin-bottom:15px;
-		width: 450px;
+		margin-bottom: 15px;
 		min-height: 200px;
 		display: flex;
+		flex-direction: column;
 		background-color: #00adb5;
 		border-radius: 8px;
 	}
-	
+
+	.feedback__item_client{
+		display: flex;
+	}
+
+	.feedback__item_client_contacts{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+		p{
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		a{
+			text-align: center;
+			text-align: center;
+			cursor: pointer;
+		}
+	}
+
+	.feedback__item_avatar{
+		height: 85px;
+		width: 75px;
+		margin: 0 auto;
+		border: 2px solid black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+	}
+
 	.feedback__text-wrapper {
 		padding-left: 10px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
-	
+
 	.feedback__avatar {
 		width: 75px;
 		height: 75px;
 		margin-bottom: auto;
 		border-radius: 50%;
 	}
-	
-	.feedback__text-wrapper p {
+
+	.feedback__text_wrapper p {
 		margin: 0;
 		margin-bottom: auto;
 		color: #EEEEEE;
 	}
-	
-	.feedback__brand {
-	}
-	
+
+	.feedback__brand {}
+
 
 
 
 }
-
-
