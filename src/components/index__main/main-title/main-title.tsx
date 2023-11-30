@@ -7,10 +7,10 @@ const textAnimation = {
     x: -100,
     opacity: 0,
   },
-  visible: custom => ( {
+  visible: custom =>  ({
     x: 0,
     opacity: 1,
-    transition: {delay: custom * 0.2}
+    transition: {delay: custom * 0.3}
   })
 }
 
@@ -21,6 +21,7 @@ function MainTitle() {
       <motion.div
         initial='hidden'
         whileInView='visible'
+        // viewport={{ amount: 0.3 }}
         className={style.main_title__wrapp}>
         <motion.h1 variants={textAnimation} className={style.main_title}>webDot<G /></motion.h1>
         <motion.p custom={2} variants={textAnimation} className={style.main_title_p}>разрабатываю и улучшаю</motion.p>

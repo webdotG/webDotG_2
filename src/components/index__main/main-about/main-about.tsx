@@ -1,36 +1,71 @@
 import './main_about.scss'
+import { motion } from 'framer-motion'
 
-function MainAbout() {
+const listAnimation = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.5 }
+  })
+}
+
+function MainAbout () {
 
   return (
     <div className='main-about__wrapper'>
       <h2 className='main-about__title'>как я работаю </h2>
-      <ul className='main-about__list'>
-        <li className='main-abou__item'>
+      <motion.ul
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ amount: 0.2, once: true }}
+        className='main-about__list'>
+        <motion.li
+          custom={1}
+          variants={listAnimation}
+          className='main-abou__item'>
           <img src='#' alt='icon'></img>
           <p>изучаю задачу, составляю ТЗ</p>
-        </li>
-        <li className='main-abou__item'>
+        </motion.li>
+        <motion.li
+          custom={2}
+          variants={listAnimation}
+          className='main-abou__item'>
           <img src='#' alt='icon'></img>
           <p>заключаю договор</p>
-        </li>
-        <li className='main-abou__item'>
-        <img src='#' alt='icon'></img>
+        </motion.li>
+        <motion.li
+          custom={3}
+          variants={listAnimation}
+          className='main-abou__item'>
+          <img src='#' alt='icon'></img>
           <p>разрабатываю концепцию и дизайн</p>
-        </li>
-        <li className='main-abou__item'>
-        <img src='#' alt='icon'></img>
+        </motion.li>
+        <motion.li
+          custom={4}
+          variants={listAnimation}
+          className='main-abou__item'>
+          <img src='#' alt='icon'></img>
           <p>верстаю и программирую</p>
-        </li>
-        <li className='main-abou__item'>
-        <img src='#' alt='icon'></img>
-                    <p>тестирую</p>
-        </li>
-        <li className='main-abou__item'>
-        <img src='#' alt='icon'></img>
+        </motion.li>
+        <motion.li
+          custom={5}
+          variants={listAnimation}
+          className='main-abou__item'>
+          <img src='#' alt='icon'></img>
+          <p>тестирую</p>
+        </motion.li>
+        <motion.li
+          custom={6}
+          variants={listAnimation}
+          className='main-abou__item'>
+          <img src='#' alt='icon'></img>
           <p>запускую</p>
-        </li>
-      </ul>
+        </motion.li>
+      </motion.ul>
     </div>
   )
 }
