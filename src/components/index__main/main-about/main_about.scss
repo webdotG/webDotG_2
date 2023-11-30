@@ -21,7 +21,7 @@
 
   .main-about__title {
     margin: 0;
-    padding-top: 25px;
+    padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
     min-height: 50px;
@@ -37,6 +37,8 @@
   .main-about__list {
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,20 +49,35 @@
 
   .main-abou__item {
     padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    width: 260px;
+    min-height: 100px;
     display: flex;
-    line-height: 50px;
+    flex-direction: column;
+    align-items: center;
     border-radius: 8px;
-    font-size: 25px;
+    font-size: 18px;
     background-color: #00adb5;
     color: #EEEEEE;
   }
 
   .main-abou__item img {
-    margin-right: 15px;
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222831;
+  }
+
+  p{
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
   }
 
 }
