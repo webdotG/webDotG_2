@@ -33,22 +33,33 @@ function Header() {
 
             <li className={style.header_nav__item}>
               <Link className={style.header_nav__link} to="/webDotG_2/login">
-                log in
+                портфолио
               </Link>
             </li>
 
             <li className={style.header_nav__item}>
               <Link className={style.header_nav__link} to="/webDotG_2/register">
-                register
+                цены
               </Link>
             </li>
 
             <li className={style.header_nav__item}>
               <Link className={style.header_nav__link} to="/webDotG_2/portfolio">
-                portfolio
+                отзывы
               </Link>
             </li>
 
+            <li className={style.header_nav__item}>
+              <Link className={style.header_nav__link} to="/webDotG_2/portfolio">
+                войти
+              </Link>
+            </li>
+
+            <li className={style.header_nav__item}>
+              <Link className={style.header_nav__link} to="/webDotG_2/portfolio">
+                регистрация
+              </Link>
+            </li>
 
           </ul>
         </nav>

@@ -43,11 +43,12 @@
 	}
 
 	.header_navigation {
-		padding-right: 55px;
+		padding-right: 40px;
 		padding-left: 15px;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
+		justify-content: center;
 	}
 
 	.list {
@@ -59,7 +60,8 @@
 	}
 
 	.header_nav__item{
-		padding-bottom: 10px;
+		padding-bottom: 15px;
+		text-align: center;
 	}
 
 	.header_nav__link {
