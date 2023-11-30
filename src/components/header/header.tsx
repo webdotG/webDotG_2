@@ -6,7 +6,7 @@ import style from './header.module.scss'
 function Header() {
 
   const [onClickBtn, setOnCliclBtn] = useState(false)
-  const [isAuth, setIsAuth] = useState(true)
+  const [isAuth, setIsAuth] = useState(false)
 
   console.log(onClickBtn)
 
