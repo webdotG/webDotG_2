@@ -7,13 +7,13 @@ function MainOrder() {
       <h2 className='main-order__title'>сделать заказ</h2>
       <ul className='main-order__list'>
         <li className='main-order__item'>
-          <a className='main-order__link' href=''></a>
+          <a className='main-order__link' href=''>телега</a>
         </li>
         <li className='main-order__item'>
-          <a className='main-order__link' href=''></a>
+          <a className='main-order__link' href=''>вотсап</a>
         </li>
         <li className='main-order__item'>
-          <a className='main-order__link' href=''></a>
+          <a className='main-order__link' href=''>емайл</a>
         </li>
       </ul>
       <form className='main-order__form'>
