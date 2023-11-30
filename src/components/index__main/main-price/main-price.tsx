@@ -11,27 +11,31 @@ function MainPortfolio() {
 
 <div className={`PORTFOLIO ${style.main_price__wrapper}`}>
       <h2 className={style.main_price__title}>портфолио</h2>
-      <Carousel>
+      <Carousel defaultControlsConfig={{
+        prevButtonClassName: `${style.prev_btn}`,
+        nextButtonClassName: `${style.next_btn}`,
+        prevButtonText: '<',
+        nextButtonText: '>',
+      }}>
         <Link to='/' className={style.panel}>
           <div className={style.wrapper}>
             <img className={style.panel_img}></img>
-            <h4 className={style.panel_title}>сайты</h4>
-            <p>инди</p>
+            <h4 className={style.panel_title}>сайт бронирования отелей</h4>
+            <Link className={style.link_btn} to='/webDotG_2/portfolio'>открыть</Link>
           </div>
         </Link>
         <Link to='/' className={style.panel}>
           <div className={style.wrapper}>
             <img className={style.panel_img}></img>
-            <h4 className={style.panel_title}>чат боты</h4>
-            <p>магазины</p>
-            <p>описание</p>
+            <h4 className={style.panel_title}>телеграм бот/магазин</h4>
+            <Link className={style.link_btn} to='/webDotG_2/portfolio'>открыть</Link>
           </div>
         </Link>
         <Link to='/' className={style.panel}>
           <div className={style.wrapper}>
             <img className={style.panel_img}></img>
-            <h4 className={style.panel_title}>приложения</h4>
-            <p>Content1</p>
+            <h4 className={style.panel_title}>приложение аренды строительной техники</h4>
+            <Link className={style.link_btn} to='/webDotG_2/portfolio'>открыть</Link>
           </div>
           
         </Link>
