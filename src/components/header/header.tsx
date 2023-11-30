@@ -21,8 +21,8 @@ function Header() {
           className={style.burger_btn}
         >
           {onClickBtn
-            ? (<span>close menu</span>)
-            : (<span>open menu</span>)
+            ? (<span>открыть</span>)
+            : (<span>закрыть</span>)
           }
 
         </button>
