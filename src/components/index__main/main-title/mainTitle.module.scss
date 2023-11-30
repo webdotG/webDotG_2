@@ -5,6 +5,7 @@
     width: 100%;
     background-color: #222831;
   }
+
   .main_title{
     padding-left: 52px;
     margin: 0;
@@ -14,6 +15,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
+  }
+  
+  .main_title_p{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 23px;
+    font-weight: 300;
+    color: #EEEEEE;
   }
 
   .main_title::after{
