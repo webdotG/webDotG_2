@@ -6,8 +6,8 @@ import RegisterPage from "./pages/registerPage/registerpPgae";
 import LoginPage from "./pages/loginPage/loginPage";
 import PortfolioPage from "./pages/portfoliPage.tsx/portfolioPage";
 import MyPage from "./pages/myPage/myPage";
-import PricePage from "./pages/pricePage/pricePage";
 import CartPage from "./pages/cartPage/cartPage";
+import ShopPage from "./pages/shopPage/shopPage";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Route index path="/webDotG_2/login" element={<LoginPage />} />
       <Route index path="/webDotG_2/my" element={<MyPage />} />
       <Route index path="/webDotG_2/portfolio" element={<PortfolioPage />} />
-      <Route index path="/webDotG_2/price" element={<PricePage />} />
+      <Route index path="/webDotG_2/price" element={<ShopPage />} />
       <Route index path="/webDotG_2/cart" element={<CartPage />} />
 
       <Route path="*" element={
