@@ -2,12 +2,18 @@ import { forwardRef } from 'react'
 import { motion } from 'framer-motion'
 import './contacts.scss'
 
+// type typeCustom {
+//   y: number,
+//   opacity: number,
+//   transition: number
+// }
+
 const iconAnimation = {
   hidden: {
     y: -100,
-    opacity: 0
+    opacity: 0,
   },
-  visible: custom => ({
+  visible: (custom: number) => ({
     y: 0,
     opacity: 1,
     transition: { delay: custom * 0.35 }
