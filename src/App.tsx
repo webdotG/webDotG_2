@@ -19,7 +19,7 @@ function App() {
       <Route index path="/webDotG_2/login" element={<LoginPage />} />
       <Route index path="/webDotG_2/my" element={<MyPage />} />
       <Route index path="/webDotG_2/portfolio" element={<PortfolioPage />} />
-      <Route index path="/webDotG_2/price" element={<ShopPage />} />
+      <Route index path="/webDotG_2/shop" element={<ShopPage />} />
       <Route index path="/webDotG_2/cart" element={<CartPage />} />
 
       <Route path="*" element={
