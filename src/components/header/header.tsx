@@ -18,11 +18,6 @@ function Header() {
           Kirill Grant
         </Link>
 
-        {isAuth
-          ? (<div></div>)
-          : (<div></div>)
-        }
-
         <button
           onClick={() => setOnCliclBtn(!onClickBtn)}
           className={style.burger_btn}
@@ -38,18 +33,19 @@ function Header() {
         <nav className={style.header_navigation}>
           <ul className={style.header_nav_list}>
             <li className={style.header_nav__item}>
-              <Link className={style.header_nav__link} to="/webDotG_2/login">
+              <Link className={style.header_nav__link} to="/webDotG_2/portfolio">
                 портфолио
               </Link>
             </li>
             <li className={style.header_nav__item}>
-              <Link className={style.header_nav__link} to="/webDotG_2/register">
-                цены
+              <Link className={style.header_nav__link} to="/webDotG_2/shop">
+                магазин
               </Link>
             </li>
             <li className={style.header_nav__item}>
-              <Link className={style.header_nav__link} to="/webDotG_2/portfolio">
-                отзывы
+              {/* <section className={style.cart_iem}>0</section> */}
+              <Link className={style.header_nav__link} to="/webDotG_2/cart">
+                корзина 
               </Link>
             </li>
             <li className={style.header_nav__item}>
