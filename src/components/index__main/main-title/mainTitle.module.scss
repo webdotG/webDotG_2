@@ -18,18 +18,18 @@
   
     &::after {
       content: '';
-      width: 300px;
+      width: 186px;
       height: 3px;
       border-radius: 5px;
       background-color: #00ADB5;
       position: absolute;
-      bottom: 0;
+      bottom: 20px;
       left: 0;
     }
   }
 
   .main_title_p {
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 15px;
     font-size: 21px;
     font-weight: 300;
@@ -38,7 +38,7 @@
 
 
   .main_title_list {
-    padding-top: 45px;
+    padding-top: 20px;
     padding-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
