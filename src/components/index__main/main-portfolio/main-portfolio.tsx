@@ -22,7 +22,7 @@ function MainPrice() {
         </li>
         <li className={toggleState === 2 ? "tab active_tab" : 'tab'}
           onClick={() => toggleTab(2)}>
-          <p>чат боты</p>
+          <p>бот телеграм</p>
         </li>
         <li className={toggleState === 3 ? "tab active_tab" : 'tab'}
           onClick={() => toggleTab(3)}>
@@ -58,10 +58,20 @@ function MainPrice() {
         </li>
         <li className={toggleState === 2 ? 'content active_content' : 'content'}>
           <div className='sites_block_wrapper'>
+
+          <section className='sites_block_section'>
+              <h3 className='sites_block_section_title'>магазин бот</h3>
+              <p className='sites_block_section_text'>шаблон :</p>
+              <p id='sites_block_section_price'>60 000р</p>
+              <p className='sites_block_section_text'>инди :</p>
+              <p id='sites_block_section_price'>от 90 000р</p>
+            </section>
             <section className='sites_block_section'>
-              <h3 className='content_blok_telegram'>магазин бот в телеграм</h3>
-              <p className='sites_block_section_price telega'>шаблон : 45 000р</p>
-              <p className='sites_block_section_price telega'>инди : от 60 000р</p>
+              <h3 className='sites_block_section_title'>чат бот</h3>
+              <p className='sites_block_section_text'>шаблон :</p>
+              <p id='sites_block_section_price'>45 000р</p>
+              <p className='sites_block_section_text'>инди :</p>
+              <p id='sites_block_section_price'>от 80 000р</p>
             </section>
           </div>
         </li>
