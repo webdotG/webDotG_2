@@ -28,6 +28,7 @@ function MainPrice() {
           onClick={() => toggleTab(3)}>
           <p>приложения</p>
         </li>
+
       </ul>
       <ul className='content_tabs'>
         <li className={toggleState === 1 ? 'content active_content' : 'content'}>
@@ -58,15 +59,29 @@ function MainPrice() {
         <li className={toggleState === 2 ? 'content active_content' : 'content'}>
           <div className='sites_block_wrapper'>
             <section className='sites_block_section'>
-              <h3 className='content_blok_telegram'>телеграм бот магазин</h3>
+              <h3 className='content_blok_telegram'>магазин бот в телеграм</h3>
               <p className='sites_block_section_price telega'>шаблон : 45 000р</p>
               <p className='sites_block_section_price telega'>инди : от 60 000р</p>
             </section>
           </div>
         </li>
         <li className={toggleState === 3 ? 'content active_content' : 'content'}>
-          <h2>title tab 3</h2>
-          <p>text tab 3</p>
+          <div className='sites_block_wrapper'>
+            <section className='sites_block_section'>
+              <h3 className='sites_block_section_title' >IOS & Android</h3>
+              <p className='sites_block_section_text'>шаблон :</p>
+              <p id='sites_block_section_price'>80 000р</p>
+              <p className='sites_block_section_text'>инди :</p>
+              <p id='sites_block_section_price'>от 120 000р</p>
+            </section>
+            <section className='sites_block_section'>
+              <h3 className='sites_block_section_title'>VK mini App</h3>
+              <p className='sites_block_section_text'>шаблон :</p>
+              <p id='sites_block_section_price'>60 000р</p>
+              <p className='sites_block_section_text'>инди :</p>
+              <p id='sites_block_section_price'>от 90 000р</p>
+            </section>
+          </div>
         </li>
       </ul>
       <Link className='main_price_link_shop' to='/webDotG_2/shop'>перейти в магазин</Link>
