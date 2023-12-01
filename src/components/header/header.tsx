@@ -79,7 +79,7 @@ function Header() {
             перейти в личный кабинет
           </Link>
         }
-        <button  className={style.check_auth_btn} onClick={() => setIsAuth(!isAuth)}>toggle auth</button>
+        <button  className={style.check_auth_btn} onClick={() => setIsAuth(!isAuth)}>toggle auth test</button>
       </div>
     </header>
   )
