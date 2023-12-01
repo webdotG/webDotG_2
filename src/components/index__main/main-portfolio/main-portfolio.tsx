@@ -33,31 +33,36 @@ function MainPrice() {
         <li className={toggleState === 1 ? 'content active_content' : 'content'}>
           <div className='sites_block_wrapper'>
             <section className='sites_block_section'>
-              <h3>лендинг</h3>
-              <p>шаблон :</p>
+              <h3 className='sites_block_section_title' >лендинг</h3>
+              <p className='sites_block_section_text'>шаблон :</p>
               <p id='sites_block_section_price'>15 000р</p>
-              <p>инди :</p>
+              <p className='sites_block_section_text'>инди :</p>
               <p id='sites_block_section_price'>от 30 000р</p>
             </section>
-            <section  className='sites_block_section'>
-              <h3>многостраничный</h3>
-              <p>шаблон :</p>
+            <section className='sites_block_section'>
+              <h3 className='sites_block_section_title'>многостраничный</h3>
+              <p className='sites_block_section_text'>шаблон :</p>
               <p id='sites_block_section_price'>60 000р</p>
-              <p>инди :</p>
+              <p className='sites_block_section_text'>инди :</p>
               <p id='sites_block_section_price'>от 90 000р</p>
             </section>
-            <section  className='sites_block_section'>
-              <h3>магазин</h3>
-              <p>шаблон :</p>
+            <section className='sites_block_section'>
+              <h3 className='sites_block_section_title'>магазин</h3>
+              <p className='sites_block_section_text'>шаблон :</p>
               <p id='sites_block_section_price'>120 000р</p>
-              <p>инди :</p>
+              <p className='sites_block_section_text'>инди :</p>
               <p id='sites_block_section_price'>от 150 000р</p>
             </section>
           </div>
         </li>
         <li className={toggleState === 2 ? 'content active_content' : 'content'}>
-          <h2>title tab 2</h2>
-          <p>text tab 2</p>
+          <div className='sites_block_wrapper'>
+            <section className='sites_block_section'>
+              <h3 className='content_blok_telegram'>телеграм бот магазин</h3>
+              <p className='sites_block_section_price telega'>шаблон : 120 000р</p>
+              <p className='sites_block_section_price telega'>инди : от 150 000р</p>
+            </section>
+          </div>
         </li>
         <li className={toggleState === 3 ? 'content active_content' : 'content'}>
           <h2>title tab 3</h2>

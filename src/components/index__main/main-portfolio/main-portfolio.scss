@@ -70,7 +70,7 @@
 		background-color: #00adb5;
 		border: 2px solid #00adb5;
 	}
-	
+
 	.content_tabs {
 		flex-grow: 1;
 	}
@@ -92,38 +92,35 @@
 		display: block;
 	}
 
-	.sites_block_wrapper{
+	.sites_block_wrapper {
 		display: flex;
 		justify-content: space-around;
 	}
-	
-	.sites_block_section{
-		h3,
-		p{
-			padding-top: 15px;
-			margin: 0;
-			font-size: 16px;
-			font-weight: 200;
-			text-align: center;
-		}
+
+
+	.sites_block_section_title,
+	.sites_block_section_text {
+		padding-top: 15px;
+		margin: 0;
+		font-size: 16px;
+		font-weight: 200;
+		text-align: center;
 	}
 
-	.sites_block_section{
-		h3{
-			font-size: 17px;
-			padding-bottom: 5px;
-			border-bottom: #00ADB5 2px solid;
-		}
+	.sites_block_section_title {
+		font-size: 17px;
+		padding-bottom: 5px;
+		border-bottom: #00ADB5 2px solid;
 	}
 
 
-	#sites_block_section_price{
+	#sites_block_section_price {
 		font-size: 14px;
 		padding-bottom: 5px;
 		border-bottom: #00ADB5 2px solid;
 	}
 
-	.main_price_link_shop{
+	.main_price_link_shop {
 		width: 164px;
 		margin: 0 auto;
 		margin-top: 10px;
@@ -133,16 +130,25 @@
 		border-radius: 8px;
 		font-size: 18px;
 		letter-spacing: 0.5px;
-		
 		color: #222831;
 		background-color: #00ADB5;
 
 		&:focus,
 		&:hover,
-		&:active{
-		color: #eeeeee;	
-		// background-color: #eeeeee;
-		// border-color: #222831;		
+		&:active {
+			color: #eeeeee;
+			// background-color: #eeeeee;
+			// border-color: #222831;		
 		}
+	}
+
+	.content_blok_telegram {
+		font-size: 23px;
+	}
+
+	.telega {
+		font-size: 21px;
+		letter-spacing: 0.5px;
+
 	}
 }
