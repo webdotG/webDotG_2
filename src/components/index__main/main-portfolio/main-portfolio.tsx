@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './main-portfolio.scss'
+import { Link } from 'react-router-dom'
 
 
 
@@ -21,17 +22,38 @@ function MainPrice() {
         </li>
         <li className={toggleState === 2 ? "tab active_tab" : 'tab'}
           onClick={() => toggleTab(2)}>
-            <p>чат боты</p>
-            </li>
+          <p>чат боты</p>
+        </li>
         <li className={toggleState === 3 ? "tab active_tab" : 'tab'}
           onClick={() => toggleTab(3)}>
-            <p>приложения</p>
-            </li>
+          <p>приложения</p>
+        </li>
       </ul>
       <ul className='content_tabs'>
         <li className={toggleState === 1 ? 'content active_content' : 'content'}>
-          <h2>title tab 1</h2>
-          <p>text tab 1</p>
+          <div className='sites_block_wrapper'>
+            <section className='sites_block_section'>
+              <h3>лендинг</h3>
+              <p>шаблон :</p>
+              <p id='sites_block_section_price'>15 000р</p>
+              <p>инди :</p>
+              <p id='sites_block_section_price'>от 30 000р</p>
+            </section>
+            <section  className='sites_block_section'>
+              <h3>многостраничный</h3>
+              <p>шаблон :</p>
+              <p id='sites_block_section_price'>60 000р</p>
+              <p>инди :</p>
+              <p id='sites_block_section_price'>от 90 000р</p>
+            </section>
+            <section  className='sites_block_section'>
+              <h3>магазин</h3>
+              <p>шаблон :</p>
+              <p id='sites_block_section_price'>120 000р</p>
+              <p>инди :</p>
+              <p id='sites_block_section_price'>от 150 000р</p>
+            </section>
+          </div>
         </li>
         <li className={toggleState === 2 ? 'content active_content' : 'content'}>
           <h2>title tab 2</h2>
@@ -42,7 +64,7 @@ function MainPrice() {
           <p>text tab 3</p>
         </li>
       </ul>
-
+      <Link className='main_price_link_shop' to='/webDotG_2/shop'>перейти в магазин</Link>
     </div>
   )
 }
