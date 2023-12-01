@@ -17,28 +17,34 @@ function MainPortfolio() {
         prevButtonText: '<',
         nextButtonText: '>',
       }}>
-        <Link to='/' className={style.panel}>
+        <div className={style.panel}>
           <div className={style.wrapper}>
             <img className={style.panel_img}></img>
             <h4 className={style.panel_title}>сайт бронирования отелей</h4>
             <Link className={style.link_btn} to='/webDotG_2/portfolio'>открыть</Link>
           </div>
-        </Link>
-        <Link to='/' className={style.panel}>
+        </div>
+        <div  className={style.panel}>
           <div className={style.wrapper}>
             <img className={style.panel_img}></img>
             <h4 className={style.panel_title}>телеграм бот/магазин</h4>
             <Link className={style.link_btn} to='/webDotG_2/portfolio'>открыть</Link>
           </div>
-        </Link>
-        <Link to='/' className={style.panel}>
+        </div>
+        {/* <div className={style.panel}>
+          <div className={style.wrapper}>
+            <img className={style.panel_img}></img>
+            <h4 className={style.panel_title}>ВК мини приложение</h4>
+            <Link className={style.link_btn} to='/webDotG_2/portfolio'>открыть</Link>
+          </div>
+        </div> */}
+        <div className={style.panel}>
           <div className={style.wrapper}>
             <img className={style.panel_img}></img>
             <h4 className={style.panel_title}>приложение аренды строительной техники</h4>
             <Link className={style.link_btn} to='/webDotG_2/portfolio'>открыть</Link>
           </div>
-          
-        </Link>
+        </div>
       </Carousel>
     </div>   
   );

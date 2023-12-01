@@ -1,23 +1,34 @@
-
 @media (min-width: 340px) {
-  
-  .main_title__wrapp{
+
+  .main_title__wrapp {
     width: 100%;
     background-color: #222831;
   }
 
-  .main_title{
-    padding-left: 52px;
+  .main_title {
+    width: 300px;
     margin: 0;
+    margin: 0 auto;
     color: #EEEEEE;
     font-size: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-  }
   
-  .main_title_p{
+    &::after {
+      content: '';
+      width: 300px;
+      height: 3px;
+      border-radius: 5px;
+      background-color: #00ADB5;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .main_title_p {
     padding-top: 20px;
     padding-bottom: 15px;
     font-size: 21px;
@@ -25,18 +36,8 @@
     color: #EEEEEE;
   }
 
-  .main_title::after{
-    content: '';
-    width: 250px;
-    height: 3px;
-    border-radius: 5px;
-    background-color: #00ADB5;
-    position: absolute;
-    bottom: 0;
-    left: 50px;
-  }
 
-  .main_title_list{
+  .main_title_list {
     padding-top: 45px;
     padding-bottom: 25px;
     display: flex;
@@ -44,8 +45,8 @@
     justify-content: space-evenly;
     background-color: #222831;
     position: relative;
-    
-    &::after{
+
+    &::after {
       content: '';
       width: 100%;
       height: 3px;
@@ -56,7 +57,7 @@
       left: 0;
     }
 
-    li{
+    li {
       margin-bottom: 10px;
       color: #EEEEEE;
       font-size: 18px;
@@ -66,47 +67,48 @@
 }
 
 .main-title__wrapper {
-  padding-left:40px;
-  padding-right:40px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #222831;
 }
 
-.letter-g__wrapper{
+.letter-g__wrapper {
   padding-top: 150px;
-  padding-left:60px;
-  padding-bottom:15px;
-  display:flex;
+  padding-left: 60px;
+  padding-bottom: 15px;
+  display: flex;
   align-items: center;
 }
+
 .main-title {
-	margin: 0;
-	margin-right: -14px;
+  margin: 0;
+  margin-right: -14px;
   font-size: 125px;
   color: #EEEEEE;
 }
 
-.main-title__title{
+.main-title__title {
   margin: 0;
-  padding-left:60px;
-  padding-top:15px;
+  padding-left: 60px;
+  padding-top: 15px;
   font-size: 25px;
-  color:#EEEEEE;
+  color: #EEEEEE;
 }
 
-.main-title__text-wrapper{
-  padding-bottom:125px;
+.main-title__text-wrapper {
+  padding-bottom: 125px;
   display: flex;
 }
 
-.main-title__text{
+.main-title__text {
   margin: 0;
-  padding-left:60px;
-  padding-top:15px;
+  padding-left: 60px;
+  padding-top: 15px;
   font-size: 25px;
-  color:#EEEEEE;
+  color: #EEEEEE;
 }
 
 .main-title__text:focus,
-.main-title__text:hover{
-  color:#00ADB5;
+.main-title__text:hover {
+  color: #00ADB5;
 }
