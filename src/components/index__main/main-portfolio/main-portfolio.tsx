@@ -59,8 +59,8 @@ function MainPrice() {
           <div className='sites_block_wrapper'>
             <section className='sites_block_section'>
               <h3 className='content_blok_telegram'>телеграм бот магазин</h3>
-              <p className='sites_block_section_price telega'>шаблон : 120 000р</p>
-              <p className='sites_block_section_price telega'>инди : от 150 000р</p>
+              <p className='sites_block_section_price telega'>шаблон : 45 000р</p>
+              <p className='sites_block_section_price telega'>инди : от 60 000р</p>
             </section>
           </div>
         </li>
