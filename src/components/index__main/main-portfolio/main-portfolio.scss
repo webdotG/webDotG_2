@@ -121,34 +121,43 @@
 	}
 
 	.main_price_link_shop {
-		width: 164px;
+		width: 225px;
+		height: 35px;
 		margin: 0 auto;
 		margin-top: 10px;
-		padding: 7px 15px;
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		border: #00adb5 2px solid;
 		border-radius: 8px;
 		font-size: 18px;
 		letter-spacing: 0.5px;
-		color: #222831;
+		color: #eeeeee;
 		background-color: #00ADB5;
 
 		&:focus,
 		&:hover,
 		&:active {
-			color: #eeeeee;
+			color: #222831;		
 			// background-color: #eeeeee;
 			// border-color: #222831;		
 		}
 	}
 
 	.content_blok_telegram {
-		font-size: 23px;
+		font-size: 21px;
+		margin: 0;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		font-weight: 200;
+		padding-bottom: 7px;
+		border-bottom: #00ADB5 2px solid;
 	}
 
 	.telega {
-		font-size: 21px;
-		letter-spacing: 0.5px;
+		padding-top: 15px;
+		font-size: 18px;
+		letter-spacing: 0.7px;
 
 	}
 }
