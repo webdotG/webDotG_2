@@ -58,7 +58,6 @@ function MainPrice() {
         </li>
         <li className={toggleState === 2 ? 'content active_content' : 'content'}>
           <div className='sites_block_wrapper'>
-
           <section className='sites_block_section'>
               <h3 className='sites_block_section_title'>магазин бот</h3>
               <p className='sites_block_section_text'>шаблон :</p>

@@ -4,7 +4,14 @@ function Footer () {
 
   return(
     <footer>
-<p>надо что0то впихнкть тут</p>
+      <ul className='footer_list'>
+        <li className='footer_item'>
+          дизайн и разработка :
+        </li>
+        <li className='footer_item'>
+          webDotG (Kirill Grant)
+          </li>
+      </ul>
     </footer>
   )
 }
