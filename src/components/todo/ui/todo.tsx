@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import { useAppDispatch, useAppSelector } from '../../../store/hook'
+import { useAppDispatch, useAppSelector } from '../../../STORE/hook'
 import ToDoList from './todoList'
 import style from './todo.module.scss'
 import ToDoInpuField from './todoInputField'
-import { fetchAddNewTodo, fetchTodos } from '../../../store/todoSlice'
+import { fetchAddNewTodo, fetchTodos } from '../../../STORE/todoSlice'
 
 function Todo() {
   const dispatch = useAppDispatch()

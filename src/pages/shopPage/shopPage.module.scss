@@ -1,0 +1,41 @@
+@import '../../variables';
+
+
+@media (min-width: 320px) {
+
+  .display_none {
+    display: none;
+  }
+
+  .check_first {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+  }
+
+  .check_seconde {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site_seconde_blok_wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+  }
+
+  .site_third_blok_wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site_fourth_blok_wrapper{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+}

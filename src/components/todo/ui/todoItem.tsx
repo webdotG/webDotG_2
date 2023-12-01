@@ -1,5 +1,5 @@
-import { useAppDispatch } from '../../../store/hook'
-import { fetchDeleteTodo, fetchToggleStatusTodo } from '../../../store/todoSlice'
+import { useAppDispatch } from '../../../STORE/hook'
+import { fetchDeleteTodo, fetchToggleStatusTodo } from '../../../STORE/todoSlice'
 import style from './todo.module.scss'
 
 type typeTodoItemProps = {

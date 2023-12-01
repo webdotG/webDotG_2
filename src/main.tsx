@@ -1,9 +1,8 @@
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux';
-import store from './store/store.ts'
+import store from './STORE/store.ts'
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.tsx'
-import './index.scss'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>

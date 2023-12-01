@@ -1,4 +1,4 @@
-import { useAppSelector } from "../../../store/hook"
+import { useAppSelector } from "../../../STORE/hook"
 import ToDoItem from "./todoItem"
 
 import style from './todo.module.scss'
