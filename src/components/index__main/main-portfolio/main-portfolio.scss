@@ -133,7 +133,16 @@
 		border-radius: 8px;
 		font-size: 18px;
 		letter-spacing: 0.5px;
-		color: #eeeeee;
+		
+		color: #222831;
 		background-color: #00ADB5;
+
+		&:focus,
+		&:hover,
+		&:active{
+		color: #eeeeee;	
+		// background-color: #eeeeee;
+		// border-color: #222831;		
+		}
 	}
 }
