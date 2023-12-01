@@ -69,9 +69,9 @@ function MainPrice() {
             <section className='sites_block_section'>
               <h3 className='sites_block_section_title'>чат бот</h3>
               <p className='sites_block_section_text'>шаблон :</p>
-              <p id='sites_block_section_price'>45 000р</p>
+              <p id='sites_block_section_price'>40 000р</p>
               <p className='sites_block_section_text'>инди :</p>
-              <p id='sites_block_section_price'>от 80 000р</p>
+              <p id='sites_block_section_price'>от 60 000р</p>
             </section>
           </div>
         </li>
