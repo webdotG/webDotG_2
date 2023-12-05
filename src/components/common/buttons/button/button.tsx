@@ -1,11 +1,11 @@
 import React from 'react'
-import './button.scss'
+import style from  './button.module.scss'
 
 interface typeButtonProps extends React.HTMLProps<HTMLButtonElement>{}
 
 export const Button: React.FC<typeButtonProps> = ({children}) => {
 
   return (
-    <button className='button_login'>{children}</button>
+    <button className={style.button_login}>{children}</button>
   )
 }
