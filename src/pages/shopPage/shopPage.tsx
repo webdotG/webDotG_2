@@ -1,9 +1,7 @@
 import Header from '../../components/header/header'
 import style from './shopPage.module.scss'
 
-
 function ShopPage() {
-
   return (
     <>
       <Header />
@@ -66,14 +64,10 @@ function ShopPage() {
             <input type='checkbox' />
           </div>
            */}
-
-
         </div>
-
       </div>
     </>
   )
-
 }
 
-export default ShopPage
+export default ShopPage;
