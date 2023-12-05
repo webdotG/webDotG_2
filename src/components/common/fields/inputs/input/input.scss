@@ -1,0 +1,34 @@
+@media (min-width:320px) {
+
+  input {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+
+    &::placeholder{
+      color: rgba( 0, 0, 0, 0.7);
+      font-size: 16px;
+    }
+  }
+
+  .input_error{
+    background-color: tomato;
+  }
+
+  .input_wrapper{
+    padding: 10px;
+  }
+
+  .input_helperText{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: tomato;
+    font-weight: 200;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+}
