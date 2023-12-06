@@ -42,7 +42,7 @@ function LoginPage() {
       <Link className={style.back_link} to='/webDotG_2/'>на главную</Link>
       <div className={style.login_page_form_wrapper}>
         <h2 className={style.form_title}>войти</h2>
-        <form className={style.form}>
+        <form className={style.form} autoComplete='off'>
 
           <Input
             type='text'
@@ -59,7 +59,9 @@ function LoginPage() {
               helperText: formError.username
             })}
             id='input_login'
-            placeholder='имя' />
+            placeholder='имя'
+            autoComplete='off' 
+            />
           
           <Input
             type='password'
@@ -77,6 +79,7 @@ function LoginPage() {
             })}
             id='input_password'
             placeholder='пароль'
+            autoComplete='off'
           />
           <Button>Войти</Button>
         </form>
