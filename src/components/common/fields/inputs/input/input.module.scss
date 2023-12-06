@@ -22,6 +22,7 @@
 
   .input_wrapper{
     padding: 10px;
+    position: relative;
   }
 
   .input_helperText{
@@ -33,5 +34,12 @@
     text-decoration: underline;
   }
 
+  .show{
+    color: #eeeeee;
+    display: inline-block;
+    position: absolute;
+    right: 17px;
+    bottom: 17px;
+  }
   
 }

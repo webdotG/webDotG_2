@@ -11,7 +11,7 @@ export const Input: React.FC<typeInputProps> = ({ isError = false, helperText, t
   const showPasswordToggle = props.value && type === 'password'
 
   return (
-    <div className='input_wrapper'>
+    <div className={style.input_wrapper}>
 
       <input className={`${style.input} ${isError ? style.input_error : ''}`}
         type={type === 'password' && showPassword ? 'text' : type}
@@ -21,7 +21,7 @@ export const Input: React.FC<typeInputProps> = ({ isError = false, helperText, t
       {isError && helperText && <div className={style.input_helperText}>{helperText}</div>}
 
       {showPasswordToggle &&
-        <div onClick={() => setShowPassword(!showPassword)}>
+        <div className={style.show} onClick={() => setShowPassword(!showPassword)}>
           {showPassword ? 'hide' : 'show'}
         </div>
       }
