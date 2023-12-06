@@ -8,7 +8,6 @@ function MainPage() {
   return (
     <>
       <Header />
-      {/* <Todo /> */}
       <IndexMain />
       <Footer />
     </>

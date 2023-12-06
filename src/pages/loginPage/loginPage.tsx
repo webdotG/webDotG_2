@@ -40,8 +40,8 @@ function LoginPage() {
   return (
     <div className={style.loginpage_wrapper}>
       <div className={style.login_page_form_wrapper}>
-        <section>header form</section>
-        <form className={style.form_wrapper}>
+        <h2 className={style.form_title}>войти</h2>
+        <form className={style.form}>
 
           <Input
             type='text'
@@ -79,7 +79,7 @@ function LoginPage() {
           />
           <Button>Войти</Button>
         </form>
-        <Link className={style.login_link} to='/webDotG_2/register'>зарегестрироваться</Link>
+        <Link className={style.login_link} to='/webDotG_2/register'>зарегистрироваться</Link>
       </div>
     </div>
   )

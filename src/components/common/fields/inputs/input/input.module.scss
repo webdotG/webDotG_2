@@ -1,16 +1,17 @@
 @media (min-width:320px) {
 
   input {
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 5px 10px;
-    border: 2px solid black;
+    border: 2px solid c;
     border-radius: 8px;
     outline: none;
     background-color: transparent;
     font-size: 18px;
+    color: white;
 
     &::placeholder{
-      color: rgba( 0, 0, 0, 0.7);
+      color: #eeeeee;
       font-size: 16px;
     }
   }
@@ -31,4 +32,6 @@
     font-size: 14px;
     text-decoration: underline;
   }
+
+  
 }

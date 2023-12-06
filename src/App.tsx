@@ -13,6 +13,7 @@ import ShopPage from "./pages/shopPage/shopPage";
 function App() {
 
   return (
+    
     <Routes>
       <Route index path="/webDotG_2/" element={<MainPage />} />
       <Route index path="/webDotG_2/register" element={<RegisterPage />} />
