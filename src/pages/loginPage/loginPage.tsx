@@ -39,6 +39,7 @@ function LoginPage() {
 
   return (
     <div className={style.loginpage_wrapper}>
+      <Link className={style.back_link} to='/webDotG_2/'>на главную</Link>
       <div className={style.login_page_form_wrapper}>
         <h2 className={style.form_title}>войти</h2>
         <form className={style.form}>

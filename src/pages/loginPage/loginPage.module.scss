@@ -2,36 +2,44 @@
 
   .loginpage_wrapper {
     height: 100vh;
-    padding-top: 75px;
-    display: flex;
-    justify-content: center;
     background-color: #393e46;
+  }
+
+  .back_link {
+    display: block;
+    padding: 25px;
+    color: #eeeeee;
+    font-size: 18px;
+    font-weight: 200;
   }
 
   .login_page_form_wrapper {
     height: 375px;
+    width: 280px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
+    margin: 0 auto;
+    margin-top: 50px;
     background-color: #ffff;
     border: 2px #00ADB5 solid;
     background-color: transparent;
     border-radius: 10px;
-     // box-shadow: 0px 4px 50px 2px rgba(0, 0, 0, 0.15);
+    // box-shadow: 0px 4px 50px 2px rgba(0, 0, 0, 0.15);
   }
 
-  .form_title{
+  .form_title {
     margin: 0;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 21px;
-    color:  #eeeeee;
+    color: #eeeeee;
     text-align: center;
     text-transform: uppercase;
     font-weight: 200;
   }
 
-  .form{
+  .form {
     padding-top: 25px;
     padding-bottom: 25px;
   }
